@@ -88,7 +88,7 @@ MySQL Database
 
 ## Database Design
 
-Current Entity Relationships
+Current Entity Relationship Diagram
 
 ```text
 User
@@ -136,6 +136,16 @@ gym-progress-tracker/
 
 ## Getting Started
 
+## Prerequisites
+
+Before running the project, ensure you have the following installed:
+
+- Java 23
+- Node.js
+- MySQL 8+
+- Git
+- Maven (or use the included Maven Wrapper)
+
 ### Clone the repository
 
 ```bash
@@ -150,13 +160,55 @@ npm install
 npm run dev
 ```
 
+---
+
 ### Backend
 
-Run the Spring Boot application.
+```bash
+cd backend
+```
+If using VS Code:
+
+- Open the backend project.
+- Open `GymtrackerApplication.java`.
+- Click **Run**.
+
+Or use Maven:
+
+```bash
+./mvnw spring-boot:run
+```
+
+---
 
 ### Database
 
-Create a MySQL database and configure the database credentials in `application.properties`.
+Create a MySQL database.
+
+```sql
+CREATE DATABASE gymtracker;
+```
+
+Copy
+
+```
+application-example.properties
+```
+
+to
+
+```
+application.properties
+```
+
+Update the database credentials.
+
+```properties
+spring.datasource.url=jdbc:mysql://localhost:3306/gymtracker
+spring.datasource.username=your_username
+spring.datasource.password=your_password
+```
+
 
 ### Application URLs
 
@@ -193,7 +245,7 @@ Completed
 
 ## Roadmap
 
-### Completed
+### Implemented Features
 
 - [x] User Authentication
 - [x] JWT Authorization
@@ -223,6 +275,6 @@ Screenshots will be added after the completion of the MVP.
 
 **Aravindh Sai**
 
-Atrificial Intelligence and Machine learning Student.
+B.Tech Student (Artificial Intelligence & Machine Learning)
 
 Passionate about Full-Stack Development, Artificial Intelligence, and Software Engineering.
