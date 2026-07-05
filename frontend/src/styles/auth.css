@@ -1,0 +1,52 @@
+/* ------------------------------
+   Authentication Page
+------------------------------ */
+
+.auth-page{
+
+    min-height:100vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:32px;
+
+}
+
+.auth-header{
+
+    text-align:center;
+
+    margin-bottom:40px;
+
+}
+
+.auth-header h1{
+
+    margin-bottom:12px;
+
+}
+
+.auth-header p{
+
+    max-width:500px;
+
+}
+
+.auth-card{
+
+    width:100%;
+
+    max-width:380px;
+
+}
+.primary-button{
+
+    width:100%;
+
+}
