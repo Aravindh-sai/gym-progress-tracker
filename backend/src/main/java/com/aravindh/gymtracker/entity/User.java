@@ -1,4 +1,5 @@
 package com.aravindh.gymtracker.entity;
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 import jakarta.persistence.Column;
@@ -28,4 +29,7 @@ public class User {
     private String preferredUnit;
     @Column(nullable = false )
     private LocalDateTime createdAt;
+    @Column
+    private LocalDate routineStartDate;
+  
 }

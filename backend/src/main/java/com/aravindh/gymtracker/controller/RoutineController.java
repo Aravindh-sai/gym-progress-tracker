@@ -1,22 +1,31 @@
 package com.aravindh.gymtracker.controller;
 
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.aravindh.gymtracker.dto.CreateRoutineDayRequest;
+import com.aravindh.gymtracker.dto.CurrentRoutineDayResponse;
 import com.aravindh.gymtracker.dto.RoutineResponse;
 import com.aravindh.gymtracker.service.RoutineService;
 
 @RestController
 public class RoutineController {
     private final RoutineService routineService;
-    public  RoutineController( RoutineService routineService){
+
+    public RoutineController(RoutineService routineService) {
         this.routineService = routineService;
     }
+
     @PostMapping("/routine-days")
-    public RoutineResponse createRoutine(@RequestBody CreateRoutineDayRequest request){
-          return routineService.createRoutine(request);
+    public RoutineResponse createRoutine(@RequestBody CreateRoutineDayRequest request) {
+        return routineService.createRoutine(request);
+    }
+
+    @GetMapping("/routine-days/current")
+    public CurrentRoutineDayResponse getCurrentRoutineDay() {
+        return routineService.getCurrentRoutineDay();
     }
 
 }

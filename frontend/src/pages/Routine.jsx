@@ -56,7 +56,7 @@ function Routine() {
 
         const routineDayRequest = {
             title: routineDays[index].title,
-            isRestDay: routineDays[index].isRestDay,
+            restDay: routineDays[index].isRestDay,
             exercises: routineDays[index].exercises
         };
 
@@ -111,7 +111,7 @@ function Routine() {
 
         const routineDayRequest = {
             title: routineDays[index].title,
-            isRestDay: routineDays[index].isRestDay,
+            restDay: routineDays[index].isRestDay,
             exercises: routineDays[index].exercises
         };
         const saveLastDayresult = await saveRoutineDay(routineDayRequest);
@@ -119,7 +119,7 @@ function Routine() {
 
             const restDayRequest = {
                 title: "Rest Day",
-                isRestDay: true,
+                restDay: true,
                 exercises: []
             };
 

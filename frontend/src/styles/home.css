@@ -1,0 +1,68 @@
+.today-workout-section {
+    width: 100%;
+    max-width: 620px;
+    margin: 0 auto;
+}
+
+.today-workout-section > h2 {
+    margin-bottom: 16px;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.today-workout-card {
+    background: #111827;
+    border: 1px solid #263247;
+    border-radius: 14px;
+    padding: 24px;
+}
+
+.today-workout-card h3 {
+    margin: 0 0 20px;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.today-exercise-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.today-exercise-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 16px;
+    background: #182235;
+    border-radius: 10px;
+}
+
+.today-exercise-row span:first-child {
+    font-weight: 500;
+}
+
+.today-exercise-row span:last-child {
+    font-size: 0.9rem;
+    color: #9ca3af;
+}
+
+.today-workout-card > p {
+    margin: 0;
+    color: #9ca3af;
+    line-height: 1.6;
+}
+
+@media (max-width: 640px) {
+    .today-workout-section {
+        max-width: 100%;
+    }
+
+    .today-workout-card {
+        padding: 18px;
+    }
+
+    .today-exercise-row {
+        padding: 12px 14px;
+    }
+}

@@ -30,3 +30,12 @@ This project follows Semantic Versioning.
 ### Notes
 
 This release establishes the foundation of Gym Progress Tracker. Future releases will introduce workout logging, progress tracking, body weight management, and analytics.
+
+## [Unreleased]
+
+### Added
+
+- Calendar-based routine progression
+- Current workout calculation based on routine start date
+- Today's Workout card on the Home dashboard
+- API endpoint for retrieving the current workout day

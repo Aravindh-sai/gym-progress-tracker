@@ -10,4 +10,5 @@ import com.aravindh.gymtracker.entity.User;
 public interface RoutineDayRepository
         extends JpaRepository <RoutineDay, Long> {
             List<RoutineDay> findByUser(User user);
+            List<RoutineDay> findByUserOrderByPositionAsc(User user);
 }

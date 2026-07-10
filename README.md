@@ -31,6 +31,8 @@ The project focuses on writing clean, maintainable code, designing intuitive use
 - Configure target sets for every exercise
 - Create rest days to complete a workout cycle
 - Save routines to the database
+- Automatically determine the current workout day based on the routine start date
+- Display today's workout and target sets on the Home dashboard
 
 ### User Interface
 
@@ -104,11 +106,12 @@ Future versions will introduce entities such as Workout Session, Workout Set, Bo
 
 ## API Endpoints
 
-| Method | Endpoint      | Description         |
-|--------|---------------|---------------------|
-| POST   | /signup       | Register a new user |
-| POST   | /login        | Authenticate a user |
-| POST   | /routine-days | Save a workout day  |
+| Method | Endpoint              | Description                      |
+|--------|-----------------------|----------------------------------|
+| POST   | /signup               | Register a new user              |
+| POST   | /login                | Authenticate a user              |
+| POST   | /routine-days         | Save a workout day               |
+| GET    | /routine-days/current | Retrieve the current workout day |
 
 ---
 
